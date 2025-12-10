@@ -1,0 +1,102 @@
+.sidebar {
+  width: 260px;
+  background: #2E236C;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  color: white;
+  position: relative;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.sidebar-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 10px;
+}
+
+/* كل عنصر */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* أيقونة داخل دائرة */
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* Hover */
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+/* العنصر النشط */
+.sidebar-item.active {
+  background: white;
+  color: #2E236C;
+  font-weight: 700;
+}
+
+/* الأيقونة في العنصر النشط */
+.sidebar-item.active .icon {
+  background: #2E236C;
+  color: white;
+}
+
+/* الخط الأبيض على اليسار */
+.sidebar-item.active::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  width: 14px;
+  height: 100%;
+  background: white;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.sidebar-logout {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  font-size: 22px;
+}
+.icon {
+  font-size: 20px;
+  color: white;
+}
