@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"; 
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import "./Dashboard.css";
@@ -19,8 +20,7 @@ return (
 <Navbar />
 
 <div className="dashboard-page">
-<h1>{role.toUpperCase()} Dashboard</h1>
-<p>Welcome to your platform…</p>
+<Outlet />
 </div>
 </div>
 </div>
