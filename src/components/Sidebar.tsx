@@ -33,7 +33,7 @@ export default function Sidebar({ role }: SidebarProps) {
     { label: "Actualités & Notifications", icon: <FiBell />,   path: "/dashboard/teacher/notifications" },
     { label: "Messages",             icon: <FiMessageCircle />, path: "/dashboard/teacher/messages" },
     { label: "Étudiants",            icon: <FiUsers />,         path: "/dashboard/teacher/students" },
-    { label: "Enseignants",          icon: <FiUsers />,         path: "/dashboard/teacher/enseignants" },
+    { label: "Enseignants",          icon: <FiUsers />,         path: "/dashboard/teacher/teachers" },
     { label: "Account",              icon: <FiUser />,          path: "/dashboard/teacher/account" },
   ];
 
