@@ -1,0 +1,88 @@
+/* ======== GLOBAL WRAPPER ======== */
+.teacher-container {
+  padding: 30px;
+  width: 100%;
+}
+
+/* ======== TITLE ======== */
+.teacher-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* ======== CARDS ======== */
+.stats-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stats-card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stats-card h2 {
+  font-size: 32px;
+  color: #2E236C;
+  margin: 0;
+}
+
+.stats-card p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333;
+}
+
+/* ======== SEARCH + FILTER ======== */
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  padding: 12px;
+  width: 280px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.filter-select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+/* ======== TABLE ======== */
+.teachers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.teachers-table th {
+  background: #2E236C;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.teachers-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.teachers-table tr:hover {
+  background: #f7f7f7;
+}
+
