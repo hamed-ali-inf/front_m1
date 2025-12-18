@@ -1,5 +1,6 @@
 import React from "react";
 import { FiEdit } from "react-icons/fi";
+
 import "./CoursesResources.css";
 
 const CoursesResources = () => {
