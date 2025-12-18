@@ -1,0 +1,14 @@
+/* src/components/StudentLayout.css */
+
+.student-layout {
+  display: flex;
+  height: 100vh; /* Make the layout take up the full screen height */
+  overflow: hidden; /* Prevent double scrollbars */
+}
+
+.main-content {
+  flex: 1; /* Take up the remaining space */
+  padding: 0;
+  overflow-y: auto; /* Allow the main content area to scroll independently */
+  background-color: #f0f9f0; /* Light green background from the screenshot */
+}

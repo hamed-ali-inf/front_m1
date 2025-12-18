@@ -1,3 +1,5 @@
+// src/components/Sidebar.tsx
+
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Sidebar.css";
@@ -26,7 +28,6 @@ interface SidebarProps {
 export default function Sidebar({ role }: SidebarProps) {
   const location = useLocation();
 
-  
   const teacherItems: Item[] = [
     { label: "Emploi du temps",      icon: <FiCalendar />,      path: "/dashboard/teacher/schedule" },
     { label: "Cours",                icon: <FiBook />,          path: "/dashboard/teacher/courses" },
@@ -37,7 +38,6 @@ export default function Sidebar({ role }: SidebarProps) {
     { label: "Account",              icon: <FiUser />,          path: "/dashboard/teacher/account" },
   ];
 
-  
   const studentItems: Item[] = [
     { label: "Emploi du temps",          icon: <FiCalendar />,       path: "/dashboard/student/schedule" },
     { label: "Chat avec les enseignants", icon: <FiMessageCircle />, path: "/dashboard/student/chat" },

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import DocumentRequest from './DocumentRequest';
+import CoursesResources from './components/CoursesResources';
 // added route for TeacherManagement
 import TeacherManagement from "./components/Teacher/TeacherManagement";
 
@@ -30,7 +31,11 @@ export default function App() {
         />
 
         {/* added route for TeacherManagement*/}
-        <Route path="/enseignants" element={<TeacherManagement />} />
+        <Route path="/enseignants" element={<TeacherManagement />}
+        />
+        <Route path="/dashboard/student/courses" element={<CoursesResources />} 
+        />
+        
 
       </Routes>
     </BrowserRouter>
